@@ -7,6 +7,9 @@ from openai import OpenAI
 import chardet
 
 # Setup OpenAI
+import streamlit as st
+from openai import OpenAI
+
 client = OpenAI(api_key=st.secrets["openai"]["api_key"])
 
 # Load documents from txt files
