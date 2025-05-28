@@ -1,14 +1,11 @@
+# Setup OpenAI + dependencies
 import streamlit as st
-import faiss
+from openai import OpenAI
 import numpy as np
-import textstat
-from pathlib import Path
-from openai import OpenAI
+import faiss
 import chardet
-
-# Setup OpenAI
-import streamlit as st
-from openai import OpenAI
+from pathlib import Path
+import textstat
 
 client = OpenAI(api_key=st.secrets["openai"]["api_key"])
 
@@ -36,7 +33,7 @@ def embed_chunks(chunks):
     for chunk in chunks:
         try:
             response = client.embeddings.create(
-                model="text-embedding-3-small",
+                model="text-embedding-ada-002",  # safer fallback model
                 input=chunk
             )
             vectors.append(response.data[0].embedding)
@@ -46,8 +43,11 @@ def embed_chunks(chunks):
 
 # Ask the assistant
 def ask_question(question, chunks, embeddings, k=3):
+    if embeddings.shape[0] == 0:
+        return "❌ No knowledge base available to answer this question."
+
     embed_response = client.embeddings.create(
-        model="text-embedding-3-small",
+        model="text-embedding-ada-002",
         input=question
     )
     query_embedding = np.array([embed_response.data[0].embedding], dtype=np.float32)
@@ -62,7 +62,7 @@ def ask_question(question, chunks, embeddings, k=3):
     messages = [
         {"role": "system", "content": (
             "You are a pediatric orthopedic guide. Speak clearly to parents using plain English. "
-            "Use short words and short sentences. Use line breaks between ideas for readability."
+            "Use short words and short sentences. Use line breaks between ideas for readability. "
             "Use bulleted or numbered lists for treatment steps or symptoms. Avoid medical terms unless you explain them. "
             "Write at a 5th to 6th grade reading level. Keep each answer kind, calm, and easy to follow. "
             "Only use the provided context. Never guess."
@@ -70,7 +70,7 @@ def ask_question(question, chunks, embeddings, k=3):
         {"role": "user", "content": f"Context:\n{context}\n\nQuestion: {question}"}
     ]
 
-    for _ in range(3):  # retry if grade too high
+    for _ in range(3):  # retry if reading grade is too high
         chat_response = client.chat.completions.create(
             model="gpt-3.5-turbo",
             messages=messages
@@ -81,9 +81,9 @@ def ask_question(question, chunks, embeddings, k=3):
             break
 
     disclaimer = (
-        "\n\n📢 This is general information, not medical advice." 
-        "Please visit https://orthokids.org or https://www.orthoinfo.org for more information!"
-        "Please talk to your child's doctor for specific care or emergencies."
+        "\n\n📢 This is general information, not medical advice. "
+        "Visit https://orthokids.org or https://orthoinfo.aaos.org for more info. "
+        "Talk to your child's doctor for specific care or emergencies."
     )
 
     return response_text + disclaimer
@@ -94,13 +94,23 @@ st.title("🦴 Pediatric Ortho Assistant")
 st.markdown("Ask a question about pediatric bone injuries or treatments:")
 
 question = st.text_input("Enter your question:")
-if 'chunks' not in st.session_state:
-    with st.spinner("Loading knowledge base..."):
-        st.session_state.chunks = load_documents("AAOS_Peds")  # replace with your folder
-        st.session_state.embeddings = embed_chunks(st.session_state.chunks)
 
-if question:
-    with st.spinner("Thinking..."):
+# Load knowledge base once
+if 'chunks' not in st.session_state:
+    with st.spinner("🔄 Loading knowledge base..."):
+        chunks = load_documents("AAOS_Peds")  # replace with your folder
+        embeddings = embed_chunks(chunks)
+        if len(embeddings) == 0:
+            st.error("⚠️ No embeddings were generated. Check your .txt files or API access.")
+        else:
+            st.session_state.chunks = chunks
+            st.session_state.embeddings = embeddings
+
+# Handle question
+if question and "chunks" in st.session_state and "embeddings" in st.session_state:
+    with st.spinner("🤖 Thinking..."):
         answer = ask_question(question, st.session_state.chunks, st.session_state.embeddings)
         st.markdown("### 💬 Answer:")
         st.write(answer)
+elif question:
+    st.warning("⏳ Please wait for the knowledge base to finish loading.")
