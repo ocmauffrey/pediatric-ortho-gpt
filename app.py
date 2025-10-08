@@ -28,7 +28,7 @@ CHAT_MODEL  = "gpt-4o-mini"             # fast, high quality
 # Secrets: support both st.secrets["openai"]["api_key"] and st.secrets["OPENAI_API_KEY"]
 OPENAI_API_KEY = (
     st.secrets.get("openai", {}).get("api_key")
-client = OpenAI(api_key=OPENAI_API_KEY)
+client = OpenAI(api_key=OPENAI_API_KEY))
 
 st.set_page_config(page_title="Pediatric Ortho Assistant", layout="centered")
 st.title("🦴 Pediatric Ortho Assistant")
