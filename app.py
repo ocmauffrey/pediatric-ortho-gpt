@@ -25,10 +25,13 @@ META_PATH  = INDEX_DIR / "kb_meta.json"
 EMBED_MODEL = "text-embedding-3-small"  # fast & accurate enough for RAG
 CHAT_MODEL  = "gpt-4o-mini"             # fast, high quality
 
-# Secrets: support both st.secrets["openai"]["api_key"] and st.secrets["OPENAI_API_KEY"]
-OPENAI_API_KEY = (
-    st.secrets.get("openai", {}).get("api_key")
-client = OpenAI(api_key=OPENAI_API_KEY))
+# Load OpenAI API key from secrets (supports both formats)
+if "openai" in st.secrets and "api_key" in st.secrets["openai"]:
+    OPENAI_API_KEY = st.secrets["openai"]["api_key"]
+else:
+    OPENAI_API_KEY = st.secrets.get("OPENAI_API_KEY")
+
+client = OpenAI(api_key=OPENAI_API_KEY)
 
 st.set_page_config(page_title="Pediatric Ortho Assistant", layout="centered")
 st.title("🦴 Pediatric Ortho Assistant")
