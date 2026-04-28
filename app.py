@@ -18,7 +18,7 @@ from openai import OpenAI
 # -----------------------
 # CONFIG
 # -----------------------
-DATA_DIR   = Path("PICU_Resources")   # <- folder with your validated .txt source files
+DATA_DIR   = Path("PICU_Resources:")   # <- folder with your validated .txt source files
 INDEX_DIR  = Path("index_store")
 INDEX_DIR.mkdir(exist_ok=True, parents=True)
 INDEX_PATH = INDEX_DIR / "kb.faiss"
