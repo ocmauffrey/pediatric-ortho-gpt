@@ -1,4 +1,6 @@
-# Pediatric Ortho Assistant (optimized)
+# PICU Parent Assistant
+# Adapted from Pediatric Ortho Assistant
+# Knowledge base: validated PICU/critical care parent resources (SCCM, AAP, ICUsteps, etc.)
 
 import os
 import json
@@ -16,14 +18,14 @@ from openai import OpenAI
 # -----------------------
 # CONFIG
 # -----------------------
-DATA_DIR = Path("AAOS_Peds")     # <- your text folder
-INDEX_DIR = Path("index_store")
+DATA_DIR   = Path("PICU_Resources")   # <- folder with your validated .txt source files
+INDEX_DIR  = Path("index_store")
 INDEX_DIR.mkdir(exist_ok=True, parents=True)
 INDEX_PATH = INDEX_DIR / "kb.faiss"
 META_PATH  = INDEX_DIR / "kb_meta.json"
 
-EMBED_MODEL = "text-embedding-3-small"  # fast & accurate enough for RAG
-CHAT_MODEL  = "gpt-4o-mini"             # fast, high quality
+EMBED_MODEL = "text-embedding-3-small"
+CHAT_MODEL  = "gpt-4o-mini"
 
 # Load OpenAI API key from secrets (supports both formats)
 if "openai" in st.secrets and "api_key" in st.secrets["openai"]:
@@ -33,9 +35,45 @@ else:
 
 client = OpenAI(api_key=OPENAI_API_KEY)
 
-st.set_page_config(page_title="Pediatric Ortho Assistant", layout="centered")
-st.title("🦴 Pediatric Ortho Assistant")
-st.markdown("Ask a question about pediatric bone injuries or treatments:")
+# -----------------------
+# PAGE CONFIG
+# -----------------------
+st.set_page_config(
+    page_title="PICU Family Guide",
+    page_icon="💙",
+    layout="centered"
+)
+
+st.title("💙 PICU Family Guide")
+st.markdown(
+    "This tool helps families understand what is happening in the Pediatric Intensive Care Unit (PICU). "
+    "Ask a question below and get a clear, plain-language answer based on trusted medical resources."
+)
+
+# Emotional safety notice at the top — always visible
+st.info(
+    "**You are not alone.** This tool provides general information only. "
+    "For questions about your child's specific condition, treatment, or prognosis, "
+    "please speak directly with your care team — they are your best resource. "
+    "If you are feeling overwhelmed, ask to speak with our social worker or chaplain.",
+    icon="🤝"
+)
+
+# -----------------------
+# TOPIC GUARDRAILS
+# -----------------------
+# Questions the assistant should not attempt to answer — routed to care team instead.
+OUT_OF_SCOPE_KEYWORDS = [
+    "will my child survive", "is my child going to die", "how long does he have",
+    "how long does she have", "prognosis", "chances of survival", "make it",
+    "odds", "percent chance", "will they recover", "brain dead", "brain death",
+    "withdraw", "withdrawing care", "comfort care", "hospice", "end of life",
+    "code", "code status", "dnr", "do not resuscitate"
+]
+
+def is_out_of_scope(question: str) -> bool:
+    q = question.lower()
+    return any(kw in q for kw in OUT_OF_SCOPE_KEYWORDS)
 
 # -----------------------
 # HELPERS
@@ -50,7 +88,6 @@ def read_file_with_detected_encoding(file_path: Path) -> str:
         return raw.decode("utf-8", errors="ignore")
 
 def paragraph_chunk(text: str, chunk_chars=1000, overlap=120) -> List[str]:
-    # Prefer paragraph boundaries; fall back to sliding window
     paras = [p.strip() for p in text.split("\n\n") if p.strip()]
     if not paras:
         txt = text.strip()
@@ -65,7 +102,6 @@ def paragraph_chunk(text: str, chunk_chars=1000, overlap=120) -> List[str]:
             cur = p
     if cur:
         chunks.append(cur)
-    # If any chunks are still huge, window them
     final = []
     for c in chunks:
         if len(c) <= chunk_chars + 200:
@@ -73,7 +109,6 @@ def paragraph_chunk(text: str, chunk_chars=1000, overlap=120) -> List[str]:
         else:
             for i in range(0, len(c), chunk_chars - overlap):
                 final.append(c[i:i+chunk_chars])
-    # Light filter to avoid tiny fragments
     return [c for c in final if len(c) >= 200]
 
 def load_documents(folder: Path) -> Tuple[List[str], List[dict]]:
@@ -108,7 +143,6 @@ def embed_batched(texts: List[str], batch_size=128) -> np.ndarray:
         vecs.extend([d.embedding for d in resp.data])
         st.progress(min(1.0, (i + len(batch)) / max(1, total)), text=f"Embedding {i + len(batch)}/{total}")
     arr = np.array(vecs, dtype="float32")
-    # Normalize for cosine similarity
     faiss.normalize_L2(arr)
     return arr
 
@@ -116,7 +150,7 @@ def corpus_signature(folder: Path) -> str:
     h = hashlib.sha256()
     for p in sorted(folder.glob("*.txt")):
         h.update(p.name.encode())
-        h.update(p.read_bytes())  # content-based
+        h.update(p.read_bytes())
     return h.hexdigest()
 
 @st.cache_resource(show_spinner=False)
@@ -131,46 +165,55 @@ def load_or_build_index() -> Tuple[faiss.Index, List[dict]]:
         except Exception:
             pass
 
-    # Rebuild
     chunks, metas = load_documents(DATA_DIR)
     chunks, metas = dedupe(chunks, metas)
     if not chunks:
-        raise RuntimeError("No chunks produced from the corpus. Check your .txt files.")
+        raise RuntimeError("No chunks produced from the corpus. Check your .txt files in PICU_Resources/.")
 
     vecs = embed_batched(chunks, batch_size=128)
-    index = faiss.IndexFlatIP(vecs.shape[1])  # inner product with normalized vectors == cosine sim
+    index = faiss.IndexFlatIP(vecs.shape[1])
     index.add(vecs)
 
     faiss.write_index(index, str(INDEX_PATH))
     META_PATH.write_text(json.dumps({"signature": sig, "metas": metas, "count": len(chunks)}, ensure_ascii=False))
-    # Keep chunks in a separate cache slot so we don't bloat META
-    st.session_state["_chunks_cache"] = chunks  # lightweight in-memory cache for this session
+    st.session_state["_chunks_cache"] = chunks
     return index, metas
 
-def ask_question(question: str, index: faiss.Index, metas: List[dict], chunks: List[str], k=4) -> str:
-    # Embed the query
+def ask_question(question: str, index: faiss.Index, metas: List[dict], chunks: List[str], k=5) -> str:
     q = client.embeddings.create(model=EMBED_MODEL, input=question).data[0].embedding
     q = np.array([q], dtype="float32")
     faiss.normalize_L2(q)
 
-    # Search
     _, idxs = index.search(q, k)
     chosen = [chunks[i] for i in idxs[0] if 0 <= i < len(chunks)]
     context = "\n\n---\n\n".join(chosen)
 
     messages = [
         {"role": "system", "content": (
-            "You are a pediatric orthopedic guide. Speak clearly to parents using plain English. "
-            "Use short words and short sentences. Use line breaks between ideas. "
-            "Use bulleted or numbered lists for treatment steps or symptoms. "
-            "Avoid medical terms unless you explain them. "
-            "Write at a 5th–6th grade reading level. Keep the tone kind and calm. "
-            "Only use the provided context. If the context does not contain the answer, say so. Never guess."
+            "You are a compassionate family guide for the Pediatric Intensive Care Unit (PICU). "
+            "You help parents and caregivers understand what is happening during their child's ICU stay. "
+            "\n\n"
+            "TONE: Always warm, calm, and gentle. These families are under enormous stress. "
+            "Acknowledge that this is a hard situation before launching into information. "
+            "Never be clinical or cold. Never be falsely cheerful. "
+            "\n\n"
+            "LANGUAGE: Use plain English at a 5th–6th grade reading level. "
+            "Short sentences. Short words. Use line breaks generously between ideas. "
+            "Use bulleted lists for steps or equipment explanations. "
+            "If you must use a medical term, explain it immediately in plain language. "
+            "\n\n"
+            "SCOPE: Only use the provided context to answer. "
+            "Do NOT speculate about a child's prognosis, chances of recovery, or survival. "
+            "Do NOT interpret specific lab values, vitals, or test results. "
+            "If the context does not contain the answer, say so clearly and kindly, "
+            "and direct the family to ask their care team. Never guess. "
+            "\n\n"
+            "ESCALATION: End every response by reminding families that their nurse or doctor "
+            "is always the right person to ask about their child's specific situation."
         )},
         {"role": "user", "content": f"Context:\n{context}\n\nQuestion: {question}"}
     ]
 
-    # Keep retrying until grade target met (with a small cap)
     for _ in range(3):
         r = client.chat.completions.create(model=CHAT_MODEL, messages=messages)
         answer = r.choices[0].message.content.strip()
@@ -179,46 +222,84 @@ def ask_question(question: str, index: faiss.Index, metas: List[dict], chunks: L
             break
 
     disclaimer = (
-        "\n\n📢 This is general information, not medical advice. "
-        "See https://orthokids.org or https://orthoinfo.aaos.org for more info. "
-        "Talk to your child's doctor for specific care or emergencies."
+        "\n\n---\n"
+        "📋 **This is general information, not medical advice.** "
+        "It is based on trusted resources including the Society of Critical Care Medicine (SCCM) "
+        "and the American Academy of Pediatrics (AAP). "
+        "Always talk to your child's care team for guidance specific to your child."
     )
     return answer + disclaimer
 
 # -----------------------
 # UI + FLOW
 # -----------------------
+
+# Language selector (preserves your multilingual capability)
+language = st.selectbox(
+    "🌐 Preferred language for answers:",
+    ["English", "Spanish", "Mandarin", "French", "Arabic", "Portuguese", "Haitian Creole", "Other"],
+    index=0
+)
+
+# Common question prompts to lower barrier to use
+st.markdown("**Not sure what to ask? Try one of these:**")
+col1, col2 = st.columns(2)
+with col1:
+    if st.button("What does a ventilator do?"):
+        st.session_state["prefill"] = "What does a ventilator do and why might my child need one?"
+    if st.button("Why are there so many alarms?"):
+        st.session_state["prefill"] = "Why do the monitors alarm so often? Should I be worried every time?"
+with col2:
+    if st.button("How can I help my child?"):
+        st.session_state["prefill"] = "What can I do to help my child while they are in the PICU?"
+    if st.button("What is a central line?"):
+        st.session_state["prefill"] = "What is a central line and why does my child have one?"
+
+prefill_val = st.session_state.pop("prefill", "")
+question = st.text_input("Or type your own question here:", value=prefill_val)
+
+if language != "English" and question:
+    question = question + f" (Please answer in {language}.)"
+
+# Admin controls
 with st.expander("⚙️ Knowledge Base Controls", expanded=False):
     if st.button("Rebuild index now"):
-        # Clear cache + force rebuild on next call
         try:
             INDEX_PATH.unlink(missing_ok=True)
             META_PATH.unlink(missing_ok=True)
         except Exception:
             pass
         st.cache_resource.clear()
-        st.success("Cleared. The index will rebuild on the next load.")
+        st.success("Cleared. The index will rebuild on the next question.")
 
-question = st.text_input("Enter your question:")
-
-# Load / build index once (cached)
+# Load / build index
 try:
     with st.spinner("🔄 Preparing knowledge base…"):
         index, metas = load_or_build_index()
-        # Retrieve chunks either from session (set during build) or re-load minimal memory
         chunks = st.session_state.get("_chunks_cache")
         if chunks is None:
-            # Only reload text for display; does not re-embed
             chunks, _ = load_documents(DATA_DIR)
-        st.success(f"KB ready. {index.ntotal} chunks indexed.")
+        st.success(f"Ready — {index.ntotal} knowledge chunks indexed.")
 except Exception as e:
-    st.error(f"⚠️ Failed to prepare KB: {e}")
+    st.error(f"⚠️ Failed to prepare knowledge base: {e}")
     chunks, index, metas = [], None, []
 
+# Answer flow
 if question and index is not None and len(chunks) == index.ntotal and index.ntotal > 0:
-    with st.spinner("🤖 Thinking…"):
-        answer = ask_question(question, index, metas, chunks, k=4)
-        st.markdown("### 💬 Answer")
-        st.write(answer)
+
+    # Guardrail check before hitting the model
+    if is_out_of_scope(question):
+        st.warning(
+            "💙 This is a question that only your child's care team can answer — "
+            "it depends on things specific to your child that we don't have access to here. "
+            "Please ask your doctor or nurse directly. They want to talk with you.",
+            icon="🤝"
+        )
+    else:
+        with st.spinner("Finding an answer…"):
+            answer = ask_question(question, index, metas, chunks, k=5)
+            st.markdown("### 💬 Answer")
+            st.write(answer)
+
 elif question and (index is None or index.ntotal == 0):
-    st.warning("⏳ KB not ready yet. Try rebuilding from the controls above.")
+    st.warning("⏳ Knowledge base not ready yet. Try rebuilding from the controls above.")
