@@ -1,0 +1,48 @@
+What is hemophagocytic lymphohistiocytosis (HLH)?
+Hemophagocytic lymphohistiocytosis (HLH) is rare life-threatening syndrome that can affect infants, children, adolescents and adults. HLH is not a single disease, however; it is a group of disorders of the immune system that can be triggered by infections, cancer or rheumatologic diseases.
+In HLH, the immune system acts in a dysregulated manner, resulting in organ dysfunction and potentially death. The immune system is complex and has many components. White blood cells comprise an important part of this system; these cells communicate with each other and other cells of the body by making chemical “messengers” called cytokines. In HLH, when the white blood cells act in a dysregulated manner, they often over-produce cytokines, and the abnormally functioning white blood cells and cytokines can damage organs including the liver, spleen, bone marrow and brain. Without prompt diagnosis and treatment, HLH can lead to severe organ damage and death.
+If HLH is diagnosed quickly and accurately at a center equipped to manage this complicated disease, a cure is possible. Children’s Hospital of Philadelphia (CHOP) has a large and diverse multidisciplinary team of pediatric experts and subspecialists in the Immune Dysregulation Program dedicated to diagnosing and treating HLH in children.
+Types of HLH
+HLH occurs in two major forms:
+		Primary (or familial) HLH is an inherited version of the disease. This means it often runs in families and typically presents during infancy or early childhood. It is estimated that primary HLH affects about 1 in every 50,000 births.
+		Secondary (or acquired) HLH generally is diagnosed in older children and adults. Secondary HLH is not inherited, but rather thought to result from a temporary disturbance of the immune system. The incidence of secondary HLH (i.e., the rate at which it occurs in the population) is not known.
+Causes of HLH
+Primary HLH is caused by changes or mutations of specific areas within a person's genes. Genes provide the instructions our cells need to perform different functions within our bodies.
+Several genes have been shown to be abnormal in different people with HLH. The four most common and recognized genes are: PRF1, UNC13D, STX11 and STXBP2. It is likely other genes can cause HLH and researchers are actively working to discover these genes.
+HLH can also occur in individuals with certain immune deficiency diseases, including:
+		X-linked lymphoproliferative disease, due to mutations in the SH2D1A gene (XLP1) or XIAP/BIRC4 gene (XLP2)
+		Griscelli syndrome type II, due to mutations in the Rab27a gene
+		Chediak Higashi syndrome, due to mutations in the LYST gene
+		Interleukin-2-Inducible T-Cell Kinase (ITK) deficiency, linked to several gene mutations
+These immunodeficiencies are caused by genetic mutations. Together, these mutations (in genes associated with HLH and genes associated with primary immunodeficiencies) account for most cases of primary HLH.
+The mechanisms leading to secondary HLH are not well understood and continue to be investigated.
+How is primary HLH inherited?
+Apart from the egg and sperm cells, each cell of the body normally has two working copies of each gene. One copy of each gene comes from the biological mother, and one comes from biological father. Most of the time, primary HLH is an autosomal recessive disorder. This means that for HLH to occur, both copies of the same HLH-associated genes must be mutated. In this situation, the parents are considered HLH “carriers” because they carry one normal and one altered copy of an HLH-associated gene in the cells of their bodies. Although they carry an altered gene copy, HLH carriers usually remain healthy and do not develop the signs and symptoms of HLH. However, they have a 50% chance of passing on the defective gene to their children.
+Diagnosis and Testing for HLH
+Diagnosing HLH can be challenging because many of its initial symptoms mimic other common conditions. Symptoms such as persistent fevers, respiratory issues, rash, anemia, seizures and enlarged liver, spleen or lymph nodes may be cause for additional testing.
+HLH is diagnosed when an individual meets established criteria including:
+		The presence of a known HLH-causing genetic mutation, or
+		Has five or more of the clinical or laboratory findings listed below:
+		High and often prolonged periods of fever (more than 7 days)
+		Enlarged spleen (splenomegaly)
+		Rash, irritability and/or seizures
+		Decrease in the overall number of certain blood cells (cytopenias)
+		Elevated blood levels of triglyceride (hypertriglyceridemia); ferritin (hyperferritinemia) ≥ 500 µg/L; and/or soluble CD25 (IL-2Ra) ≥ 2400 U/mL
+		Abnormally low levels of fibrinogen (hypofibrinogenemia)
+		Decreased or absent natural killer (NK) cell (a specific type of white blood cell) killing activity
+		Reduced expression of proteins such as perforin, SAP, XIAP, and/or depressed cell functions
+		Presence of hemophagocytosis (engulfment of cellular elements including erythrocytes, leukocytes, and platelets) in the bone marrow and/or cerebrospinal fluid
+HLH Treatment
+
+There are many different terms used to describe this state of overwhelming systemic inflammation (including HLH, FHL, MAS, Hyperinflammation, Cytokine storm), in part because it can arise out of almost any disease. The Immune Dysregulation Program is ideally suited to investigating and managing the many faces of HLH, and our team of experts is used to working across disciplines using the latest diagnostic testing and targeted treatments; a selection of our most recent research can be found at the bottom of this page. Though our approach is tailored to the individual patient, our goals are always to calm inflammation and prevent or correct damage as quickly and safely as possible.
+Treatment of Primary HLH
+
+For children with primary HLH, the first step in treatment is generally to suppress the overactive immune system. This is often done using a combination of steroids and chemotherapy, with the goal of putting the disease into remission.
+
+After initial treatment, children with primary HLH usually undergo an allogeneic stem cell transplant, which replaces their defective immune system with a healthy one from a donor. Donor cells may come from a sibling, a parent or an unrelated donor. A stem cell transplant offers patients the best chance for a cure.
+
+Treatment of Secondary HLH
+
+For children with secondary HLH, the aim is to identify and treat the underlying cause of HLH (such as an infection or cancer). In many cases, by treating the underlying cause, HLH will go into remission. In some cases, however, it will be necessary to use steroids and/or chemotherapy to treat the condition – similar to treatment for primary HLH.
+
+Treatment for secondary HLH is determined more by the severity of the disorder and its symptoms, rather than its classification.

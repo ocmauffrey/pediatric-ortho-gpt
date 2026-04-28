@@ -1,0 +1,205 @@
+What is ECMO?
+ELSO has created an overview of Extracorporeal Membrane Oxygenation for people not familiar with this life support technology.
+ECMO Overview
+ECMO is an advanced therapy that can be used when a patient's heart and lungs are too sick or weak to perform their normal functions.
+ECMO acts as a modified heart-lung bypass machine, adding oxygen and removing carbon dioxide from a patient’s blood supply. But unlike a heart-lung bypass machine, ECMO can be used for longer periods.
+Suitable for patients of all ages, ECMO can assist those with severe heart and lung conditions, including cardiac arrest and respiratory failure.
+ 
+What is ECMO?
+ECMO stands for Extra Corporeal Membrane Oxygenation. You may also hear it called ECLS, which stands for Extra Corporeal Life Support.
+ECMO is a form of life support – providing support for the heart and/or lungs outside of a patient’s body. ECMO may support the body for a period (days, or sometimes, months) to allow the heart and/or lungs time to rest and heal. ECMO is not an intervention; it is only a support.
+ 
+How Does ECMO Work?
+ECMO uses a pump to do the work of the heart and an oxygenator to do the work of the lungs. The pump and oxygenator are connected using a transparent plastic tubing that connects to a patient’s circulatory system through cannulas.
+Putting a patient on ECMO involves inserting one or two cannulas in the patient's neck and/or groin(s). Based on the patient's illness, the ECMO team will decide what type of ECMO to use, the number of cannulas needed, and where they will be placed. The cannulas are tubes large enough to allow blood to circulate through the external pump and oxygenator and return to the patient’s circulatory system through the tubing that connects these pieces together.
+Oxygenators as lungs – and gas exchange
+Lungs bring oxygen to blood while carbon dioxide leaves. This ‘gas exchange’ happens naturally in healthy lungs. An oxygenator does this same function in an ECMO circuit – it brings oxygen into the blood and carbon dioxide leaves blood in the fibers inside of an oxygenator that mimic lungs.
+What Conditions are Treated With ECMO?
+Since ECMO supports a patient's recovery during a time when their heart and lungs are too sick or weak to perform their normal functions, it primarily helps with conditions affecting the heart and lungs.
+ECMO may be used with these conditions:
+	•	Acute myocardial infarction (also known as a heart attack)
+	•	Acute respiratory distress syndrome (ARDS)
+	•	Anaphylaxis (a severe allergic reaction)
+	•	Cardiogenic shock (when the heart that can't pump enough blood)
+	•	Cardiomyopathy (also known as heart muscle disease)
+	•	Congenital diaphragmatic hernia (a hole in the muscle between the chest and the belly area)
+	•	COVID-19
+	•	Hantavirus pulmonary syndrome (a virus that can cause trouble breathing)
+	•	Hypothermia (when the body body temperature is low)
+	•	Influenza (also known as the flu)
+	•	Meconium aspiration (when a fetus breathes in waste products in the womb)
+	•	Myocarditis (also known as swelling and irritation of the heart muscle)
+	•	Pneumonia (an infection and inflammation of the lungs’ air sacs)
+	•	Pulmonary embolism (when a blood clot blocks blood flow to an artery in the lung)
+	•	Pulmonary hypertension (high blood pressure in the lungs
+	•	Respiratory failure
+	•	Sepsis (an extreme response to an infection)
+	•	Trauma
+In addition, ECMO may also be used for people who are waiting for or recovering from a heart transplant or lung transplant.
+When Can a Patient “Come Off” ECMO?
+Coming Off of ECMO
+The ECMO team will evaluate the patient every day and watch for any improvements. Blood tests and vital signs are just a couple of examples of the factors that will be used to decide if the patient is getting better.
+When the patient gets to a point where little help is needed from the ECMO machine, the team will do a trial to see how they do without ECMO support. This may be done differently depending on whether the patient is on VA or VV ECMO. During this trial period, the cannulas will remain in place and will only be removed once the entire healthcare team is confident that your loved one will do well without help from the ECMO machine.
+The team will talk with you daily about how they are doing. But even with the ECMO team's best efforts, there is a chance that the patient may not get better after being on ECMO. If the time comes when the medical team feels that they have done everything possible to help the patient, but they are still not getting better or may be getting worse, the medical team will discuss the next options with you at a family conference.
+What to Expect After ECMO
+If the decision is made to take the patient off ECMO, the surgeon will return to take out the cannulas. This requires an operation, which will typically be done at the bedside in the Intensive Care Unit for VV ECMO or in the operating room for VA ECMO. Stitches and dressings will be placed to prevent bleeding from the cannula sites once they are removed
+The patient will remain on a ventilator until they can breathe on their own. As the patient’s lungs gradually improve, the ICU team will be able to decrease the settings on the breathing machine. Once the settings are low and the patient is doing all the work of breathing on his or her own, the ventilator will be removed.
+Once the patient is off ECMO and off the ventilator, there may still be a lot of work yet to do before going home:
+	•	They must have stable vital signs and be able to eat without difficulty
+	•	A feeding tube may need to be needed until they can eat on their own and swallow effectively
+	•	It may also take several days to weeks for one to get back to a normal routine and build up their muscles, since being in bed for such a long time can make them very weak
+	•	Speech therapy, physical therapy, social work, and case management may be needed to help the patient and family at this point in recovery
+The ECMO team will also continue to monitor the patient’s progress and are available as a resource before going home.
+
+While ECMO can provide significant benefits in helping a patient recover, it is still a major life-saving procedure that is not without risk. The doctor will discuss possible complications of ECMO with you before the cannulas are placed, but several of the most common risks are listed below for you to review.
+Although these and other complications may arise for any patient on ECMO, please be assured that the ECMO team takes every safety measure to decrease these risks. The patient and the ECMO machine will be closely monitored 24 hours a day by a well-trained team to help prevent these problems from occurring and to keep them safe. If a complication does arise, the ECMO team will discuss the issue with you and consider the best plan.
+Bleeding
+The most common complication of ECMO is bleeding. This is because a medication called heparin is pumped into the ECMO circuit to prevent blood clots from forming. Heparin does this by thinning the blood so that clots are less likely to form.
+Bleeding most often occurs around the ECMO cannula sites or other surgical sites on the body. However, it is possible for bleeding to occur anywhere in the body while a patient is on heparin. The most dangerous bleeding may happen in or around the brain. Therefore, the ECMO team is constantly monitoring and assessing for signs of bleeding.
+Failure or Rupture of the ECMO Circuit
+It is also possible for any part of the ECMO circuit to fail or rupture (break open). It is the ECMO specialists' job to constantly watch the circuit and detect potential complications.
+
+If the circuit fails or ruptures, the advanced technology specialists and ECMO specialists are trained to respond right away to correct the problem. This will require that the patient be taken off ECMO prior to repairing or replacing the ECMO machine. During this time, the patient will be given the support needed until ECMO can be restarted.
+Blood Clots or Air Bubbles in the ECMO Circuit
+Small blood clots or air bubbles could enter the bloodstream of the ECMO circuit. The ECMO team takes every measure to prevent clots or air from reaching the patient, which could cause a significant injury in the brain or lungs called an embolism.
+Some circuits feature a safety device that is a ‘bubble detector’ that stops the pump when a bubble is detected within the tubing. This allows the ECMO specialist to remove the air before it reaches the patient.
+Types of ECMO
+While there are several ECMO support types, there are two common ones that are most apt to be discussed: VA and VV.
+Venoarterial (VA) ECMO can be used for heart and lung support, while Venovenous (VV) ECMO is used for lung support only. VA can also be called cardiac support (although the lungs are also supported) and VV may be called respiratory support – focusing on the major organs supported in the two different ECMO types.
+The ECMO team will determine which type is necessary for a patient based on their needs.
+Venoarterial (VA) ECMO
+Venoarterial (VA) ECMO provides support for the patient's heart and lungs by allowing most of a patient's blood to move through the circuit without going through the patient's heart. This type of ECMO takes blood out of a large vein and returns it into a large artery, allowing oxygen-rich blood to circulate through the body even if the heart is too weak to pump it. Therefore, two cannulas must be placed in either the neck or the groin(s).
+Venovenous (VV) ECMO
+Venovenous (VV) ECMO provides lung support only, so the patient's heart must still function well enough to meet the body's needs. Two cannulas are placed into veins in spots close to or inside the heart.
+With VV ECMO, the surgeon or physician performing the cannulation has an option of using a special type of cannula with two lumens (pathways inside the tubing). This allows for blood to leave and return to the body in one place, creating only one entry site instead of two. Blood from the ECMO system returns to the body before the heart, and the patient's own heart pumps the blood throughout the body.
+	a	VV ECMO using special double-lumen cannula
+	b	VV ECMO using two regular cannulas
+	c	VA ECMO
+Understanding The ECMO Team Members & Their Roles
+Since receiving ECMO treatment involves crucial organs like the heart, there is a dedicated team to ensure everything takes place correctly. ECMO teams are highly trained and work closely together as a team throughout ECMO.
+ECMO Physician (ECMOlogist)
+The physician responsible for ECMO care can be from several different disciplines: intensive care, emergency medicine, pulmonology, cardiology, etc. This physician has special training in ECMO/ECLS patient assessment, management, and care while on ECMO.
+Interventional Cardiologist
+Interventional cardiologists can place a patient on ECMO in the cardiac catheterization lab using peripheral cannula insertion techniques (or removal when coming off ECMO). The catheterization lab also has easy means to check for placement.
+Cardiothoracic Surgeon
+A Cardiothoracic (CT) surgeon may help put a patient on ECMO by surgically inserting cannulas where required. This can be done in several settings, including the OR and the bedside if in the ER or ICU
+Vascular Surgeon
+Vascular surgeons can be involved in cannula placement or removal, in addition to the above specialists.
+Perfusionist
+An individual who has specialized training and certification in running the heart-lung machine in the operating room and may be involved in managing ECMO at the bedside.
+ECMO Coordinator/ECMO Primer
+A registered nurse (RN), respiratory therapist (RT), or perfusionist who specializes in the management and operation of ECMO. The coordinator or primer will prepare the machine and tubing when the patient is first placed on ECMO
+In the event of trouble with the ECMO circuit, one of these people will be available to work with the ECMO specialist to fix the problem.
+ECMO Specialist
+An ECMO Specialist can be a registered nurse (RN), respiratory therapist (RT), or perfusionist who has had special training in managing ECMO at the patient's bedside. An ECMO specialist may be at the bedside, in the general unit, rounding within the hospital, or on-call 24 hours a day to help manage the ECMO circuit based on the ECMO physician’s plan of care. In some centers, the ECMO specialist will also be the bedside nurse.
+ICU Nurse
+A registered nurse that has unique skills in caring for extremely sick patients. One of these nurses will be at the bedside providing critical care nursing to the patient. The ICU Nurse may also be the ECMO Specialist.
+Respiratory Therapist
+A registered respiratory therapist (RT) has unique skills caring for extremely sick patients and can manage ventilators and/or be part of the ECMO team as an ECMO Specialist. The role of an RT may vary from hospital to hospital.
+	a	 
+The Family's Role in ECMO
+The positive effects of having family members and friends visiting a loved one on ECMO are important. Hospitals and ICUs will commonly have visitation times and rules to help keep the patient safe, while also allowing family and friends to provide support. There may be specific rules for children. Please work with the team on the unit to coordinate visits.
+	•	Most family members feel more comfortable when they can "do something", and there are many simple things you can do to help the patient heal. Below is a list of some of those things. Please be sure to check with the bedside nurse first to make sure it is safe to touch or talk to the patient and that they are getting enough rest.
+	•	Talk, read, or sing. All patients know the voices of people they love. Even if they are very sleepy, hearing your voice may provide comfort.
+	•	Bring in some of their items from home, such as pictures.
+	•	Play their favorite music
+	•	Rub lotion on your loved one's skin, especially hands and feet.
+	•	Perform passive range-of-motion exercises, with permission and guidance from the physical therapist or relevant team members.
+From time to time, the ECMO team will hold family conferences to talk about the patient’s progress and any problems or concerns. These talks may include the ECMO team, a palliative care specialist, religious representative, as well as family and or friends of your choosing. Please work with the medical team on the frequency of such conferences to accommodate the family’s participation along with the providers’ availability so that your questions can be answered.
+The ECMO team will also make rounds with the doctor in the intensive care unit every day, and you may be welcome to join that discussion if the team agrees.
+	a	 
+What to Expect While a Patient Is On ECMO/ECLS
+Time on ECMO is going to be a roller coaster of activity and is likely to cause a wide range of emotions for you and them. We will describe what to expect to help you be prepared and to assist you in offering the best comfort and support.
+It is important to note that the most important thing for you as a spouse, family member, or friend is to stay positive, get rest, eat, and do whatever you can to take care of yourself. This will help you provide support to the patient and will help you be at your best when it is time to come off ECMO.
+The Daily Routine
+While a patient is on ECMO, there will be normal daily activities that your doctors, nurses, and ECMO specialists will do. These activities are done to make sure that your loved one is making progress and that there is nothing that the care team is overlooking in their efforts to help them get better
+Patients on ECMO will typically receive:
+Chest X-rays
+These are used by clinicians (doctors, nurses, ECMO Specialists, etc.) to monitor the progress of lung healing. During the first days of ECMO, it is likely that the x-ray will look like a white blur. As the days progress, small slivers of black will creep into the picture, indicating that the lungs are beginning to fill with air again
+Chest X-rays are also useful for doctors to figure out when to increase the ventilator and to watch out for any side effects like a pneumothorax, which is a medical term for when air gets outside the lungs and trapped in the chest. If this happens, the doctors may need to place a tube to drain the air and let the lungs expand to fill that space.
+Labs
+Patients will have lots of blood drawn for labs so that the doctors can monitor everything they can about organ function, infection status, and recovery. You need not worry, as there is a lot of blood in the ECMO circuit, and your doctors will not take more blood than they need.
+Remember that drawing blood from the ECMO circuit is painless and requires no needles or anything harmful. In fact, it is much easier for your doctors and nurses to get blood from the ECMO circuit than typical IV lines. Some centers do draw labs from the patient's lines or catheters when the patient has catheters that allow it.
+Feeding
+For the first several days to weeks on ECMO, one does not need to eat because all his/her nutrition (all the vitamins, minerals, and calories that he or she needs to help their body recover) is given through an IV.
+When people are ill and their bodies are not able to provide enough oxygen or blood to all their tissues, the body tries to conserve what it can by reducing blood flow to specific organs to ensure that the most vital organs (heart and brain) get the most blood.
+Because of this, the stomach and intestines may experience reduced blood flow in the early periods after going on ECMO–a key reason they are not fed. However, as one progresses and demonstrates signs of recovery, the doctors will begin to introduce liquid food into the stomach or intestines through a feeding tube placed in their nose called a nasogastric tube, or NG tube.
+Pain Management
+Many families worry about the pain or distress one is experiencing from being so sick and having so many procedures performed.
+However, your doctors and nurses will monitor for any signs that they are feeling pain and use specific drugs to help manage this. The goal for medical professionals is to have one sleep and wake in normal cycles and interact with the world around them without feeling any pain or anxiety.
+The initial procedure to place someone on ECMO will require general anesthesia so that they are completely asleep, unable to feel any pain, and unable to remember what is happening. As treatment progresses and they will begin to wake up, your doctors will provide sedation, pain, and anti-anxiety medicines as needed to keep them comfortable.
+Your nurses are highly trained to look for signs of pain and distress and will alert the doctors if there are any changes. In these moments, it is important that you are there to talk to and provide comfort. This will provide them with reassurance as they hear your voice, see you when they open their eyes, and they feel your touch.
+Blood and Blood Products
+ECMO is a large machine that needs to be filled with blood to work. That means the patient will receive blood and blood products throughout their ECMO treatment to ensure they can get enough oxygen to their organs
+Please note that it is completely normal to receive blood products and not necessarily a bad sign or cause for immediate concern.
+Medications
+It is important to understand that ECMO is not a cure for any disease. Rather, it is a tool that doctors can use to support a patient so that they can have the time to receive the medicines that will help them heal.
+When a patient first goes on ECMO, they will be on many medications with many complicated names. They will also likely receive antibiotics to prevent infection, pain, and sedation medicine to keep them comfortable, diuretics to help their kidneys make urine, and other types of drugs that will depend on the reason that your loved one was placed on ECMO.
+Physical Therapy or Walking on ECMO
+While the patient is on ECMO, they will be mostly required to lay on their back in bed. The longer that they are confined to bed, the longer it will take to get them back to normal after they recover. When muscles are not used, they diminish.
+As the length of time on ECMO increases, it may become necessary to provide physical therapy to help the patient maintain their strength. Physical or occupational therapists will provide this service.
+At first, it may mean simple passive range of motion exercises where the physical therapists move your loved one's arms and legs for them. Over time, they may ask him or her to use their muscles to push back on the therapist.
+Sometimes when a patient has a particular type of ECMO cannula, they may even be able to sit up in bed and eventually get up and walk while on ECMO if your healthcare team deems it safe and necessary.
+Remember, though, that the primary goal is to provide the safest, best ECMO care we can. If doctors have concerns about the safety of adding physical therapy to the overall care, they will not add this phase of their care until they deem it safe and necessary.
+How long is someone on ECMO? This is the most common question that family and friends have, and the hardest one for doctors to answer. Each patient is different and will require different amounts of time to be on ECMO depending on why they needed ECMO in the first place.
+Some patients can come off ECMO after less than 24 hours, while others require a longer duration. Most commonly, patients are on VA ECMO for 5-10 days (about 1 and a half weeks) and VV ECMO for 10-14 days (about 2 weeks). These are averages. The medical team will help you understand what a reasonable support period might be based on the patient’s specific conditions.
+The medical team is working hard to get the patient off ECMO as soon as possible. While ECMO can provide a lot of benefits to patients and practitioners strive to provide the safest ECMO treatment possible, there are still some risks involved with this treatment, with getting off ECMO the only way to completely avoid these risks.
+An Alphabetical List of Common ECMO Words & Terms
+To help you understand what is taking place, we have compiled a list that explains all the terms related to ECMO treatment:
+Activated Clotting Time (ACT): a test that measures how many seconds it takes for the blood to clot.
+Acute Respiratory Distress Syndrome (ARDS): A condition where the lungs are damaged and do not properly allow oxygen into the blood.
+Antibiotic: A drug that kills bacteria or germs used to prevent or cure an infection.
+Aorta: The large artery that carries oxygenated (red) blood from the heart to the body.
+Artery: A type of blood vessel that pumps oxygen rich (red) blood to the body's organs.
+Bronchoscopy: A procedure to visualize and examine the lungs with a fiber optic camera. Samples of tissue and sputum from this procedure may be sent to the laboratory for testing.
+Cannulas: The plastic tubes placed in the blood vessels by the surgeons to drain blood from the body to the ECMO circuit and back again
+Cannulation: The process of placing the cannulas into the blood vessels. This process may be performed surgically (incision made) or percutaneously (through the skin, much like an IV).
+Carbon dioxide (CO2): This gas is one of the body's waste products that is expelled through exhaling or breathing out.
+Cardiac catheterization: A procedure where a small catheter is placed into a vein or artery that is threaded up to the heart to allow physicians to look at the function of the heart under x-ray.
+Cardiac ECHO: An imaging test (ultrasound, or sonogram) that allows physicians to look at the function of the heart from outside the body.
+Cardiology: Specializing in the care of patients with heart disease.
+Cardiovascular (CV) surgeon:A doctor specializing in vein, artery, and heart surgery.
+Carotid artery: The large artery in the neck that carries blood from the heart to the brain.
+Centrifugal pump: A device that pumps the blood through the ECMO circuit and then returns it back to the patient, the "artificial heart" in the ECMO machine
+Chest tube: A tube that drains air or fluid, which is placed through the chest wall into the space between the lung and chest wall. This is also used to treat a collapsed lung (pneumothorax).
+Chest X-ray: A test that takes images of the lungs and heart.
+CHD or Congenital Heart Defect: This is a problem with the structure of the heart. If your loved one is on ECMO because of a heart problem, you will be given more information by the Cardiology service.
+Clamped off: A trial period when your loved one is taken off ECMO before the cannulas are removed (also called de-cannulation).
+CT Scan: Sophisticated X-ray imaging, usually of the brain, that allows physicians to look for bleeding or other problems.
+Decannulation: The process of removing the cannulas from the blood vessels. This process may be performed at the bedside in the intensive care unit.
+Dobhoff tube: A tube that is inserted through the nose to a part of the intestines (duodenum). May also be called an NJ (nasojejunal) tube. This tube allows the patient to receive nutrition and calories.
+Extracorporeal Life Support (ECLS): Another name for ECMO.
+Extracorporeal Membrane Oxygenation (ECMO):The process by which blood is removed from the body and enters a circuit of tubing where carbon dioxide is removed, and oxygen is added and is then re-warmed and then pumped back into the body. This supports the body with oxygenated blood in place of the patient's own heart and lungs.
+ECMO Flow: The measure of how much blood is being pumped through the circuit to support the patient.
+ECMO team: A medical team that provides care to an ECMO patient, which consists of specialized surgeons, perfusionists, physicians, nurses, and respiratory therapists.
+EEG (Electroencephalogram): A tracing of the electrical activity of the brain. Electrodes (wires) are placed on the scalp in several locations.
+Endotracheal tube: A tube that is placed directly in the mouth leading into the lungs to help breathe and protect the patient's airway.
+Heat Exchanger: A machine connected to the membrane oxygenator that warms the blood before it is pumped back to the patient
+Heparin: A drug that thins the blood and prevents it from clotting.
+Hemofiltration: An artificial kidney that may be used to remove extra fluid that the patient's own kidneys can't remove. It is inserted into the ECMO circuit.
+Interstitial Lung Disease: Scarring of the lungs that makes it difficult for enough oxygen to get into the bloodstream.
+Intracranial or intraventricular hemorrhage (IVH): Abnormal bleeding in or around the brain. This is a dangerous potential complication of ECMO which can be seen on ultrasound or on a CT scan.
+Ligation of blood vessels: When the ECMO catheters are removed, the veins and/or artery they were in are often permanently ligated (closed off with a stitch). Usually, this does not cause any problems because the blood can take an alternate route.
+Membrane Oxygenator: A membrane that removes carbon dioxide from the blood and replaces it with oxygen. This is also known as the "artificial lung."
+MRI: A test that uses magnetic fields to image the brain or other body parts.
+Neonatologist: A physician specializing in the care of newborn babies, including those who are critically ill.
+Nephrology: The study of kidney function.
+Neurology: The part of medicine that specializes in the nervous system, which includes the brain and spinal cord.
+Platelets: Small particles in the blood that help in the clotting ability of our body.
+Pneumothorax: The escape of air from the lungs into the space between the lung and chest wall.
+Pulmonary hypertension: A condition characterized by higher-than-normal blood pressure in the arteries of the lungs. The high pressure is caused by the lumen (central hollow port) of the arteries narrowing. As a result, the heart works harder to pump blood through the lungs because the blood vessels will not "open up" and let the blood pass through. This may cause the heart to fail or the blood to take another route around the lungs. If blood cannot flow normally through the lungs, it is difficult for it to pick up needed oxygen. When blood does not contain sufficient oxygen, other body organs will start to fail. This condition can be fatal. Sometimes, pulmonary hypertension can be cured. ECMO is sometimes used to provide oxygen to the organs while taking the strain off the lungs and/or heart. This may allow the arteries in the lung to relax and open.
+Radiologist: A doctor who specializes in reading x-rays and sonograms.
+Respiratory Distress: Trouble breathing.
+Sepsis: An infection in the blood.
+Status Asthmaticus: An asthma attack that does not get better with usual treatments and causes patients to have difficulty getting enough air in and out of their lungs.
+Surfactant: A soap-like substance normally found in the lungs of full-term babies, children, and adults. This substance keeps the lungs from collapsing. Premature babies may not have enough of this to keep their lungs from collapsing.
+Tracheostomy: A tube placed directly into the neck that leads to the lungs. This tube replaces the endotracheal tube placed in the mouth. The tracheostomy tube helps to protect the larynx. It also decreases the risk of infecting the lungs with germs from the mouth.
+Transplant Rejection: When the immune system of a patient with a transplanted organ recognizes that the organ is "foreign" and tries to attack the organ damage.
+Trialing off (Weaning): A period when ECMO support is temporarily stopped or slowed down to evaluate the function of the heart and/or lungs. If improvement is shown, ECMO may be discontinued.
+Urgent ECLS/E-CPR: An emergency ECMO system. It is used for patients who are extremely unstable and may be close to a cardiac arrest.
+VA ECMO (veno-arterial ECMO): A type of ECMO that drains blood from a vein, oxygenates the blood in the circuit, and returns the blood to the body through an artery. This type of ECMO can be used to support both the heart and lungs.
+VV ECMO (veno-venous ECMO): A type of ECMO that drains blood from a vein, oxygenates the blood in the circuit, and returns the blood through a vein. This type of ECMO is used when only the lungs need support.
+Ventilator: A breathing machine that delivers oxygen, pressure, and a rate of breathing to the patient through a breathing (endotracheal) tube. Also known as a respirator or vent.
+Ventricular Assist Device (VAD): This is a device that will assist the left side of the heart while a patient is waiting for a heart transplant. More information will be given to you if your family member is waiting for this device.
+Weaning: The process by which the amount of support is slowly decreased as the patient gets better. The term may be used to refer to the blood flow rate of the ECMO machine or the settings of the ventilator.
+
